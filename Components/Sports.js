@@ -3,12 +3,12 @@ import { services } from '../Services/services';
 import { StyleSheet, Text, View } from 'react-native';
 import { NativeBaseProvider, FlatList, ScrollView, Divider, Image, Spinner}  from 'native-base';
 import { color, padding, textAlign } from 'styled-system';
-function Home()
+function Sports()
 {
     const [newsData, setNewsData] = useState([]);
     useEffect (()=>
     {
-        services('general').then(data=>{
+        services('sports').then(data=>{
             
             setNewsData(data)
         }).catch( error => {
@@ -76,4 +76,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default Home
+export default Sports
