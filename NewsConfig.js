@@ -1,3 +1,3 @@
-export const API_KEY = `88de5b25c5564c2c87883f2c17d80fe7`;
-export const endpoint = `https://newsapi.org/v2/top-headlines`;
-export const country = 'in'
+export const API_KEY = process.env.API_KEY 
+export const endpoint = process.env.END_POINT
+export const country = process.env.COUNTRY
